@@ -1,6 +1,5 @@
 class CreateSongs < ActiveRecord::Migration
   def change
-    drop_table "songs"
     create_table :songs do |t|
       t.integer :arrangement_id
       t.string :name
