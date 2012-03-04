@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Song:</b>
+  <%= @arrangement.song_id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @arrangement.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_arrangement_path(@arrangement) %> |
+<%= link_to 'Back', arrangements_path %>

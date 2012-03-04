@@ -1,0 +1,31 @@
+<h1>Listing scores</h1>
+
+<table>
+  <tr>
+    <th>Arrangement</th>
+    <th>User</th>
+    <th>Points</th>
+    <th>Accuracy</th>
+    <th>Is master mode</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @scores.each do |score| %>
+  <tr>
+    <td><%= score.arrangement_id %></td>
+    <td><%= score.user_id %></td>
+    <td><%= score.points %></td>
+    <td><%= score.accuracy %></td>
+    <td><%= score.is_master_mode %></td>
+    <td><%= link_to 'Show', score %></td>
+    <td><%= link_to 'Edit', edit_score_path(score) %></td>
+    <td><%= link_to 'Destroy', score, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Score', new_score_path %>

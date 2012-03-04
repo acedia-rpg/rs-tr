@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Arrangement:</b>
+  <%= @score.arrangement_id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @score.user_id %>
+</p>
+
+<p>
+  <b>Points:</b>
+  <%= @score.points %>
+</p>
+
+<p>
+  <b>Accuracy:</b>
+  <%= @score.accuracy %>
+</p>
+
+<p>
+  <b>Is master mode:</b>
+  <%= @score.is_master_mode %>
+</p>
+
+
+<%= link_to 'Edit', edit_score_path(@score) %> |
+<%= link_to 'Back', scores_path %>
