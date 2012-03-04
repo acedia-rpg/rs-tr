@@ -11,6 +11,7 @@ end
 
 group :development, :test do
 	gem 'sqlite3', '1.3.5'
+	gem 'rspec-rails', '2.8.1'
 end
 
 
@@ -39,4 +40,5 @@ gem 'jquery-rails', '2.0.0'
 group :test do
   # Pretty printed test output
   gem 'turn', :require => false
+  gem 'capybara', '1.1.2'
 end
